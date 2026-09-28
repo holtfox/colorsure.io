@@ -10,6 +10,7 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -18,8 +19,11 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a href="index.html" class="logo" aria-label="ColorSure home">
-        <span class="logo__mark" aria-hidden="true"></span>
-        ColorSure
+        <svg class="logo__svg" viewBox="0 0 252 46" aria-hidden="true">
+          <mask id="cs-logo-h"><rect width="36" height="46" fill="#fff"/><rect x="12" y="6" width="12" height="4.5" rx="2.25" fill="#000"/></mask>
+          <g mask="url(#cs-logo-h)"><rect x="2" y="2" width="32" height="42" rx="6" fill="none" stroke="#111A2C" stroke-width="4"/><path d="M8 0h20a8 8 0 0 1 8 8v12H0V8a8 8 0 0 1 8-8z" fill="#FF6A13"/></g>
+          <text x="50" y="37.6" fill="#111A2C" font-family="'Inter Tight', 'Helvetica Neue', Arial, sans-serif" font-size="40" letter-spacing="-1.4"><tspan font-weight="800">Color</tspan><tspan font-weight="500">Sure</tspan></text>
+        </svg>
       </a>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
         <span class="nav-toggle__bars"><span class="nav-toggle__bar"></span></span>
@@ -51,16 +55,8 @@
             <a href="solutions.html" class="btn btn--secondary">See the Applications</a>
           </div>
         </div>
-        <div class="hero__visual reveal" aria-hidden="true">
-          <div class="visual-badge">
-            <p class="muted" style="margin:0;font-size:0.8125rem;">Placeholder — replace with badge photography or product render</p>
-            <div class="visual-badge__row">
-              <div class="badge-chip badge-chip--blue" title="Monday">Mon</div>
-              <div class="badge-chip badge-chip--green" title="Tuesday">Tue</div>
-              <div class="badge-chip badge-chip--amber" title="Wednesday">Wed</div>
-              <div class="badge-chip badge-chip--red" title="Thursday">Thu</div>
-            </div>
-          </div>
+        <div class="hero__visual reveal">
+          <img src="assets/img/home-01.webp" alt="A visitor at a school front desk putting on a color-coded visitor badge beside a badge printer" width="2400" height="1350">
         </div>
       </div>
     </section>
@@ -76,13 +72,7 @@
           <a href="solutions.html" class="btn btn--secondary">View Our Solutions</a>
         </div>
         <div class="hero__visual reveal" style="box-shadow:var(--shadow-md);">
-          <div class="visual-badge" style="min-height:240px;">
-            <span class="muted" style="font-size:0.8125rem;">Abstract badge system placeholder</span>
-            <div class="visual-badge__row">
-              <div class="badge-chip badge-chip--blue">AM</div>
-              <div class="badge-chip badge-chip--amber">PM</div>
-            </div>
-          </div>
+          <img class="is-diagram" src="assets/img/home-02.webp" alt="A row of visitor badges showing day-of-week and visitor-type color bands" width="2000" height="1200">
         </div>
       </div>
     </section>
@@ -112,7 +102,9 @@
           </p>
           <a href="contact.html" class="btn btn--primary" style="margin-top:var(--space-md);">Explore Partnership</a>
           <div class="hero__visual mt-lg" style="margin-top:var(--space-lg);border-color:rgba(255,255,255,0.12);background:var(--color-dark-elevated);">
-            <div class="article-card__image" style="aspect-ratio:4/3;border-radius:var(--radius-lg);background:linear-gradient(145deg,#1e293b,#0f172a);color:#94a3b8;">Case study visual placeholder</div>
+            <div class="article-card__image" style="aspect-ratio:4/3;border-radius:var(--radius-lg);">
+              <img src="assets/img/home-03.webp" alt="A nurse walking beside a visitor whose badge color is visible down a hospital hallway" width="1800" height="1200">
+            </div>
           </div>
         </div>
       </div>
@@ -123,7 +115,9 @@
       <div class="container split split--reverse">
         <div class="reveal">
           <div class="hero__visual">
-            <div class="article-card__image" style="aspect-ratio:4/3;background:linear-gradient(135deg,#ecfdf5,#d1fae5);color:#047857;">Facility workflow placeholder</div>
+            <div class="article-card__image" style="aspect-ratio:4/3;">
+              <img src="assets/img/home-04.webp" alt="A hand peeling a printed color visitor badge from a direct-thermal label roll" width="1600" height="1200">
+            </div>
           </div>
         </div>
         <div class="reveal">
@@ -250,7 +244,9 @@
         </div>
         <div class="reveal">
           <div class="hero__visual" style="background:var(--color-dark-elevated);border-color:rgba(255,255,255,0.1);">
-            <div class="article-card__image" style="aspect-ratio:1;background:linear-gradient(160deg,#312e81,#1e1b4b);color:#c4b5fd;">Award / certification placeholder</div>
+            <div class="article-card__image" style="aspect-ratio:1;">
+              <img src="assets/img/home-07.svg" alt="ColorSure Certified Partner badge" width="400" height="400">
+            </div>
           </div>
         </div>
       </div>
@@ -298,7 +294,9 @@
             <a href="solutions.html" class="btn btn--secondary">View Solutions</a>
           </div>
           <div class="hero__visual reveal">
-            <div class="article-card__image" style="aspect-ratio:16/10;background:linear-gradient(90deg,#f1f5f9,#e2e8f0);color:#64748b;">Partner workflow diagram placeholder</div>
+            <div class="article-card__image" style="aspect-ratio:16/10;">
+              <img class="is-diagram" src="assets/img/home-06.svg" alt="Five-step partner process: Evaluate, Define, Integrate, Launch, and Expand" width="1600" height="400">
+            </div>
           </div>
         </div>
       </div>
@@ -319,7 +317,9 @@
         <h2 id="insights-heading" class="h2 text-center mb-lg reveal">Featured Insights</h2>
         <div class="article-grid">
           <article class="article-card reveal">
-            <div class="article-card__image">Article image placeholder</div>
+            <div class="article-card__image">
+              <img src="assets/img/home-08a.webp" alt="A color-banded visitor badge held up in a lobby" width="1200" height="800">
+            </div>
             <div class="article-card__body">
               <p class="article-card__tag">Recognition</p>
               <h3><a href="insights.html">Why Color Matters More Than Text in Visitor Badge Recognition</a></h3>
@@ -327,7 +327,9 @@
             </div>
           </article>
           <article class="article-card reveal">
-            <div class="article-card__image">Article image placeholder</div>
+            <div class="article-card__image">
+              <img src="assets/img/home-08b.webp" alt="Color visitor badges on a school front-desk counter" width="1200" height="900">
+            </div>
             <div class="article-card__body">
               <p class="article-card__tag">Education</p>
               <h3><a href="insights.html">How Schools Can Use Color Badge Logic for Faster Visitor Awareness</a></h3>
@@ -335,7 +337,9 @@
             </div>
           </article>
           <article class="article-card reveal">
-            <div class="article-card__image">Article image placeholder</div>
+            <div class="article-card__image">
+              <img src="assets/img/home-08c.webp" alt="Monday through Friday visitor badges, each with a different color band, beside a badge printer" width="1200" height="900">
+            </div>
             <div class="article-card__body">
               <p class="article-card__tag">Operations</p>
               <h3><a href="insights.html">Day-of-Week Badge Logic: A Smarter Visual Security System</a></h3>
@@ -366,7 +370,13 @@
     <div class="container">
       <div class="site-footer__grid">
         <div>
-          <a href="index.html" class="site-footer__brand">ColorSure</a>
+          <a href="index.html" class="site-footer__brand" aria-label="ColorSure home">
+            <svg class="logo__svg" viewBox="0 0 252 46" aria-hidden="true">
+              <mask id="cs-logo-f"><rect width="36" height="46" fill="#fff"/><rect x="12" y="6" width="12" height="4.5" rx="2.25" fill="#000"/></mask>
+              <g mask="url(#cs-logo-f)"><rect x="2" y="2" width="32" height="42" rx="6" fill="none" stroke="#FFFFFF" stroke-width="4"/><path d="M8 0h20a8 8 0 0 1 8 8v12H0V8a8 8 0 0 1 8-8z" fill="#FFFFFF"/></g>
+              <text x="50" y="37.6" fill="#FFFFFF" font-family="'Inter Tight', 'Helvetica Neue', Arial, sans-serif" font-size="40" letter-spacing="-1.4"><tspan font-weight="800">Color</tspan><tspan font-weight="500">Sure</tspan></text>
+            </svg>
+          </a>
           <p class="site-footer__desc">Premium color visitor badge labels for Visitor Management Software platforms—built for faster recognition, clearer workflows, and partner channel growth.</p>
           <p style="margin:0 0 var(--space-sm);"><a href="contact.html" class="btn btn--primary">Explore Partnership</a></p>
           <div class="site-footer__social" aria-label="Social links">
@@ -404,7 +414,7 @@
       </div>
       <div class="site-footer__bottom">
         <p style="margin:0;">© <span id="y"></span> ColorSure. All rights reserved.</p>
-        <p style="margin:0;"><a href="contact.html">Partner inquiry</a> · <a href="mailto:hello@colorsure.io">hello@colorsure.io</a></p>
+        <p style="margin:0;"><a href="contact.html">Partner inquiry</a> · <a href="tel:+12144448493">(214) 444-8493</a> · <a href="mailto:jessica@colorsure.io">jessica@colorsure.io</a></p>
       </div>
     </div>
   </footer>

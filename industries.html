@@ -10,6 +10,7 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -17,8 +18,11 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a href="index.html" class="logo" aria-label="ColorSure home">
-        <span class="logo__mark" aria-hidden="true"></span>
-        ColorSure
+        <svg class="logo__svg" viewBox="0 0 252 46" aria-hidden="true">
+          <mask id="cs-logo-h"><rect width="36" height="46" fill="#fff"/><rect x="12" y="6" width="12" height="4.5" rx="2.25" fill="#000"/></mask>
+          <g mask="url(#cs-logo-h)"><rect x="2" y="2" width="32" height="42" rx="6" fill="none" stroke="#111A2C" stroke-width="4"/><path d="M8 0h20a8 8 0 0 1 8 8v12H0V8a8 8 0 0 1 8-8z" fill="#FF6A13"/></g>
+          <text x="50" y="37.6" fill="#111A2C" font-family="'Inter Tight', 'Helvetica Neue', Arial, sans-serif" font-size="40" letter-spacing="-1.4"><tspan font-weight="800">Color</tspan><tspan font-weight="500">Sure</tspan></text>
+        </svg>
       </a>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
         <span class="nav-toggle__bars"><span class="nav-toggle__bar"></span></span>
@@ -47,12 +51,18 @@
           <a href="contact.html" class="btn btn--primary">Explore Partnership</a>
           <a href="solutions.html" class="btn btn--secondary">View Solutions</a>
         </div>
+        <div class="page-hero__media">
+          <img src="assets/img/industries-12.webp" alt="Color visitor badges worn in a school, hospital, office, factory, and government building" width="2400" height="1200">
+        </div>
       </div>
     </section>
 
     <section class="section section--surface" aria-label="Industries detail">
       <div class="container stack stack--lg">
         <article class="industry-card reveal">
+          <div class="industry-card__image">
+            <img src="assets/img/industries-13.webp" alt="A school receptionist handing a color visitor badge across the front desk" width="1800" height="900">
+          </div>
           <h2 class="h3">K-12 Schools</h2>
           <p><strong class="muted" style="color:var(--color-text);">Challenge:</strong> Front offices manage high volumes of parents, volunteers, and vendors during narrow time windows.</p>
           <p><strong class="muted" style="color:var(--color-text);">Why color fits:</strong> Day-of-week and visitor-type cues can help staff and safety teams scan badges quickly without blocking entry flow.</p>
@@ -65,6 +75,9 @@
         </article>
 
         <article class="industry-card reveal">
+          <div class="industry-card__image">
+            <img src="assets/img/industries-14.webp" alt="A hospital visitor wearing a color-coded badge at a clinical reception desk" width="1800" height="900">
+          </div>
           <h2 class="h3">Healthcare / Hospitals</h2>
           <p><strong class="muted" style="color:var(--color-text);">Challenge:</strong> Clinical and public entrances mix patient visitors, vendors, and temporary staff with different access expectations.</p>
           <p><strong class="muted" style="color:var(--color-text);">Why color fits:</strong> Color can reinforce time-bound or category-bound visitor rules in visually busy settings.</p>
@@ -77,6 +90,9 @@
         </article>
 
         <article class="industry-card reveal">
+          <div class="industry-card__image">
+            <img src="assets/img/industries-15.webp" alt="A visitor with a color badge checking in at a corporate lobby desk" width="1800" height="900">
+          </div>
           <h2 class="h3">Corporate Offices</h2>
           <p><strong class="muted" style="color:var(--color-text);">Challenge:</strong> Multi-tenant lobbies and visitor programs must stay efficient while reflecting policy differences across floors or suites.</p>
           <p><strong class="muted" style="color:var(--color-text);">Why color fits:</strong> Zone or visitor-type coding helps roaming teams interpret context before engaging.</p>
@@ -89,6 +105,9 @@
         </article>
 
         <article class="industry-card reveal">
+          <div class="industry-card__image">
+            <img src="assets/img/industries-16.webp" alt="A contractor wearing a color visitor badge at an industrial site entrance" width="1800" height="900">
+          </div>
           <h2 class="h3">Manufacturing / Industrial Facilities</h2>
           <p><strong class="muted" style="color:var(--color-text);">Challenge:</strong> Large sites, contractor traffic, and safety-sensitive zones require clear visitor identification at gates and plant entries.</p>
           <p><strong class="muted" style="color:var(--color-text);">Why color fits:</strong> High-contrast color bands can remain visible in variable lighting and at longer sight lines.</p>
@@ -101,6 +120,9 @@
         </article>
 
         <article class="industry-card reveal">
+          <div class="industry-card__image">
+            <img src="assets/img/industries-17.webp" alt="A visitor with a color badge at a government building security desk" width="1800" height="900">
+          </div>
           <h2 class="h3">Government / Municipal Buildings</h2>
           <p><strong class="muted" style="color:var(--color-text);">Challenge:</strong> Public-sector facilities balance accessibility, security screening, and diverse visitor types.</p>
           <p><strong class="muted" style="color:var(--color-text);">Why color fits:</strong> Consistent color logic can simplify training for rotating staff and seasonal coverage.</p>
@@ -113,6 +135,9 @@
         </article>
 
         <article class="industry-card reveal">
+          <div class="industry-card__image">
+            <img src="assets/img/industries-18.webp" alt="A family visitor wearing a color badge at a senior living reception desk" width="1800" height="900">
+          </div>
           <h2 class="h3">Senior Living / Residential Care</h2>
           <p><strong class="muted" style="color:var(--color-text);">Challenge:</strong> Family visits, clinical vendors, and service providers share common entry points with varying authorization.</p>
           <p><strong class="muted" style="color:var(--color-text);">Why color fits:</strong> Visitor-type and time-based cues can reduce ambiguity for concierge and care teams.</p>
@@ -125,6 +150,9 @@
         </article>
 
         <article class="industry-card reveal">
+          <div class="industry-card__image">
+            <img src="assets/img/industries-19.webp" alt="Conference attendees wearing color-coded visitor badges at a venue entrance" width="1800" height="900">
+          </div>
           <h2 class="h3">Events / Conferences</h2>
           <p><strong class="muted" style="color:var(--color-text);">Challenge:</strong> Short-duration credentials must be understood quickly by volunteers and security across large venues.</p>
           <p><strong class="muted" style="color:var(--color-text);">Why color fits:</strong> Day or session coding scales well when badge volume spikes.</p>
@@ -173,7 +201,13 @@
     <div class="container">
       <div class="site-footer__grid">
         <div>
-          <a href="index.html" class="site-footer__brand">ColorSure</a>
+          <a href="index.html" class="site-footer__brand" aria-label="ColorSure home">
+            <svg class="logo__svg" viewBox="0 0 252 46" aria-hidden="true">
+              <mask id="cs-logo-f"><rect width="36" height="46" fill="#fff"/><rect x="12" y="6" width="12" height="4.5" rx="2.25" fill="#000"/></mask>
+              <g mask="url(#cs-logo-f)"><rect x="2" y="2" width="32" height="42" rx="6" fill="none" stroke="#FFFFFF" stroke-width="4"/><path d="M8 0h20a8 8 0 0 1 8 8v12H0V8a8 8 0 0 1 8-8z" fill="#FFFFFF"/></g>
+              <text x="50" y="37.6" fill="#FFFFFF" font-family="'Inter Tight', 'Helvetica Neue', Arial, sans-serif" font-size="40" letter-spacing="-1.4"><tspan font-weight="800">Color</tspan><tspan font-weight="500">Sure</tspan></text>
+            </svg>
+          </a>
           <p class="site-footer__desc">Premium color visitor badge labels for Visitor Management Software platforms—built for faster recognition, clearer workflows, and partner channel growth.</p>
           <p style="margin:0 0 var(--space-sm);"><a href="contact.html" class="btn btn--primary">Explore Partnership</a></p>
           <div class="site-footer__social" aria-label="Social links">
@@ -211,7 +245,7 @@
       </div>
       <div class="site-footer__bottom">
         <p style="margin:0;">© <span id="y"></span> ColorSure. All rights reserved.</p>
-        <p style="margin:0;"><a href="contact.html">Partner inquiry</a> · <a href="mailto:hello@colorsure.io">hello@colorsure.io</a></p>
+        <p style="margin:0;"><a href="contact.html">Partner inquiry</a> · <a href="tel:+12144448493">(214) 444-8493</a> · <a href="mailto:jessica@colorsure.io">jessica@colorsure.io</a></p>
       </div>
     </div>
   </footer>
